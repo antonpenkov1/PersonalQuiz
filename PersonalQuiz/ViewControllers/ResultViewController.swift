@@ -22,8 +22,10 @@ final class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        
         countAnimals()
         determineMoreFrequentAnimal()
+        
         emojiResultLabel.text = "Вы - \(animalResulted.rawValue)"
         definitionResultLabel.text = animalResulted.definition
     }
